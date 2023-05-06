@@ -38,6 +38,8 @@ It also creates logs in a common log format (CLF) so that you can better.
     process.exit(0)
 } 
 // Load express and other dependencies for serving HTML, CSS, and JS files
+import { rps } from "./lib/rpsls.js";
+import { rpsls } from "./lib/rpsls.js";
 import express from 'express'
 // Use CJS __filename and __dirname in ES module scope
 // https://flaviocopes.com/fix-dirname-not-defined-es-module-scope/
@@ -71,6 +73,46 @@ app.use(morgan(':remote-addr - :remote-user [:date[iso]] ":method :url HTTP/:htt
 // Serve static files
 const staticpath = args.stat || args.s || process.env.STATICPATH || path.join(__dirname, 'public')
 app.use('/', express.static(staticpath))
+
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+
+// app rps and rpsls
+app.get("/app/rps/", (req, res) => {
+  res.status(200).send(JSON.stringify(rps(req.body.shot)));
+})
+
+app.get("/app/rpsls/", (req, res) => {
+  res.status(200).send(JSON.stringify(rpsls(req.body.shot)));
+})
+
+// /play/ rps and rpsls QUERY
+app.get("/app/rps/play/", (req, res) => {
+  res.status(200).send(JSON.stringify(rps(req.query.shot)));
+})
+
+app.get("/app/rpsls/play/", (req, res) => {
+  res.status(200).send(JSON.stringify(rpsls(req.query.shot)));
+})
+
+// /play/ rps and rpsls BODY
+app.post("/app/rps/play/", (req, res) => {
+  res.status(200).send(JSON.stringify(rps(req.body.shot)));
+})
+
+app.post("/app/rpsls/play/", (req, res) => {
+  res.status(200).send(JSON.stringify(rpsls(req.body.shot)));
+})
+
+// :shot rps and rpsls PARAMS
+app.get("/app/rps/play/:shot", (req, res) => {
+  res.status(200).send(JSON.stringify(rps(req.params.shot)));
+})
+
+app.get("/app/rpsls/play/:shot", (req, res) => {
+  res.status(200).send(JSON.stringify(rpsls(req.params.shot)));
+})
+
 // Create app listener
 const server = app.listen(port)
 // Create a log entry on start
