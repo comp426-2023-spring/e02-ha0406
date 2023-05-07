@@ -11,7 +11,6 @@ body {
     color: #e4d315;
     padding:10px 22px;
     display: inline-block;
-    border: Chrome 1;
     text-align: center;
     cursor: grab;
 }
@@ -29,14 +28,10 @@ body {
 
 input[type="radio"] {
     appearance: auto;
-    -webkit-appearance: radio;
-    -moz-appearance: radio;
 }
 
 input[type="checkbox"].mode-selection {
-    appearance: radio;
-    -webkit-appearance: radio;
-    -moz-appearance: radio;
+    appearance: auto;
 }
 
 .mode-selector {
@@ -62,9 +57,8 @@ input[type="checkbox"].mode-selection {
     background-color: #848482;
     margin: 7px;
     padding: 10px 15px;
-    border: Chrome 1;
-    cursor: grab;
-    
+    border: black;
+    cursor: grab; 
 }
 
 .results {
