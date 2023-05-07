@@ -1,12 +1,52 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>Rock</title>
         <!-- Link to your script file(s) and CSS in here somewhere -->
+        <link rel="stylesheet" href="styles.css">
+        <script type="module" src="scripts.js"></script>
     </head>
     <body>
-
     <!-- Your interface markup goes here -->
     <!-- For interface examples, look in the `/examples/` directory in the root of your starter code repo. -->
-
+        <div class="container-wrapper">
+            <div class="container">
+                <div class="mode-selector">
+                    HINT: Select a mode, optional opponent play, your game move, and press PLAY! Then, press START OVER to reset!
+                    <br>
+                    <br>
+                    <input type="radio" name="mode" id="rps" class="mode-selection" checked>
+                    <label id="play-rps"><strong>Play Rock, Paper, Scissors?<strong></label>
+                    <br>
+                    <input type="radio" name="mode" id="rpsls" class="mode-selection">
+                    <label id="play-rpsls">Play Rock, Paper, Scissors, Lizard, Spock?</label>
+                    <br>
+                    <br>
+                    <input type="checkbox" id="opponent" class="mode-selection">
+                    <label id="play-opponent" >Play against an opponent?</label>
+                </div>
+                <br>
+                <div class="inputs"></div> <!-- will dynamically load this and result in script -->
+                <br>
+                <div class="results"></div>
+                <br>
+                <div class="buttons">
+                    <button class="play-button">PLAY</button>
+                    <button class="start-over-button">START OVER</button>
+                </div>
+            </div>
+        </div>
+        <div>
+        <br>
+        <br>
+        <br>
+        <br>
+            For rules and more information:
+            <br>
+            ...on Rock, Paper, Scissors, reference <a href="https://en.wikipedia.org/wiki/Rock_paper_scissors">Rock, Paper, Scissors</a>
+            <br>
+            ...on Rock, Paper, Scissors, Lizard, Spock, reference <a href="https://en.wikipedia.org/wiki/File:Rock_paper_scissors_lizard_spock.png">Rock, Paper, Scissors, Lizard, Spock</a>.
+        </div>
     </body>
 </html>

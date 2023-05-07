@@ -30,7 +30,7 @@ export function rps(shot) {
   var outcome;
   
   // play game out and record outcome
-  if (shot = opp_shot) {
+  if (shot == opp_shot) {
     outcome = "tie";
   } else if ((shot == "rock" && opp_shot == "scissors") || (shot == "paper" && opp_shot == "rock") || (shot == "scissors" && opp_shot == "paper")) {
       outcome = "win";
@@ -81,7 +81,7 @@ export function rpsls(shot) {
   var outcome;
   
   // play game out and record outcome
-  if (shot = opp_shot) {
+  if (shot == opp_shot) {
     outcome = "tie";
   } else if ((shot == "rock" && (opp_shot == "scissors" || opp_shot == 'lizard')) || 
              (shot == "paper" && (opp_shot == "rock" || opp_shot == 'spock')) ||

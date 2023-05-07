@@ -38,8 +38,8 @@ It also creates logs in a common log format (CLF) so that you can better.
     process.exit(0)
 } 
 // Load express and other dependencies for serving HTML, CSS, and JS files
-import { rps } from "./lib/rpsls.js";
-import { rpsls } from "./lib/rpsls.js";
+import { rps } from "./public/rpsls.js";
+import { rpsls } from "./public/rpsls.js";
 import express from 'express'
 // Use CJS __filename and __dirname in ES module scope
 // https://flaviocopes.com/fix-dirname-not-defined-es-module-scope/

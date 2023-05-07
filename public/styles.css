@@ -1,8 +1,76 @@
 body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #d1c860;
+    display: flex;
+    flex-direction: column;
 }
 
-h1 {
+.buttons {
+    color: #e4d315;
+    padding:10px 22px;
+    display: inline-block;
+    border: Chrome 1;
+    text-align: center;
+    cursor: grab;
 }
 
-p {
+.inputs {
+    align-items: center;
+    text-align: left;
+    display: inline-block;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+}
+
+input[type="radio"] {
+    appearance: auto;
+    -webkit-appearance: radio;
+    -moz-appearance: radio;
+}
+
+input[type="checkbox"].mode-selection {
+    appearance: radio;
+    -webkit-appearance: radio;
+    -moz-appearance: radio;
+}
+
+.mode-selector {
+    margin-bottom: 25px;
+    text-align: left;
+    display: inline-block;
+}
+
+.mode-selection {
+    margin: 10px;
+    text-align: left;
+    appearance: none;
+    cursor: crosshair;
+    outline: none;
+}
+  
+.mode-selection:checked {
+    appearance: auto;
+}
+  
+.play-button,
+.start-over-button {
+    background-color: #848482;
+    margin: 7px;
+    padding: 10px 15px;
+    border: Chrome 1;
+    cursor: grab;
+    
+}
+
+.results {
+    justify-content: center;
+    align-items: center;
+    padding: 22px;
+    display: inline-block;
+    text-align: left;
 }
