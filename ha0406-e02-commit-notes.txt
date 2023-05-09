@@ -5,7 +5,7 @@ I have found that Github was very inconsistent in establishing me as an author o
 This could be due to a lot of reasons but all of the commits made by either ha0406 or "root authored and root committed" are still mine.
 
 I especially don't want to manually edit the Github history of the commits for this assignment to attempt to change the "root authored and root committed" to me,
-ha0406, because I don't want to make a large mistake in the last minute that is not even connected to the execution of the final assignment.
+ha0406, because I don't want to make a large mistake in the last minute that is not even directly connected to the execution of the final assignment.
 This is a safer way that you can see exactly what I've done.
 
 All of these commits in this repo were also made by me (alongside the commits that Github gave me direct credit for):
