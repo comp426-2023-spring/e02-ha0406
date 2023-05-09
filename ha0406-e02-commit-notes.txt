@@ -36,3 +36,7 @@ https://github.com/comp426-2023-spring/e02-ha0406/commit/e1d44a4c21a50447123b4a5
 
 
 Remaining planning notes:
+   
+   - Figure out why front end is being served raw HTML instead of Scripts.js src
+   
+
