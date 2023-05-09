@@ -39,6 +39,8 @@ Remaining planning notes:
    
    - Figure out why front end is being served raw HTML instead of Scripts.js src
    
+   - Use jquery API on search?
+   
 
 Miscellaneous Notes:
 
