@@ -4,6 +4,10 @@ All commits authored by ha0406 were also made by me.
 I have found that Github was very inconsistent in establishing me as an author on my commits.
 This could be due to a lot of reasons but all of the commits made by either ha0406 or "root authored and root committed" are still mine.
 
+I especially don't want to manually edit the Github history of the commits for this assignment to attempt to change the "root authored and root committed" to me,
+ha0406, because I don't want to make a large mistake in the last minute that is not even connected to the execution of the final assignment.
+This is a safer way that you can see exactly what I've done.
+
 All of these commits in this repo were also made by me (alongside the commits that Github gave me direct credit for):
 
 https://github.com/comp426-2023-spring/e02-ha0406/commit/82ee5c209d5f7540081a3a99760cac0e8832547f
