@@ -47,3 +47,5 @@ Miscellaneous Notes:
    - Whole assignment is fully functional in "npm run test"
    
    - Images have been posted.
+   
+   - Tried to make the page look a little bit like a bumble bee, while putting everything together, just for fun :)
